@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="./assets/style.css">
     <!-- AOS CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Masonry JS -->
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar">
@@ -51,22 +53,25 @@
     <section id="home" class="hero">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6 hero-content">
-                    <h1 class="display-4 fw-bold mb-4">Hi, I'm Ravi Kumar</h1>
-                    <h2 class="mb-4">Graphic Designer | Web Designer</h2>
-                    <p class="lead mb-4">
+                <div class="col-lg-6 hero-content" data-aos="fade-right" data-aos-duration="800">
+                    <h1 class="display-4 fw-bold mb-4 hero-title">Hi, I'm Ravi Kumar</h1>
+                    <h2 class="mb-4 hero-subtitle" data-aos="fade-right" data-aos-delay="100">Graphic Designer | Web Designer</h2>
+                    <p class="lead mb-4 hero-text" data-aos="fade-right" data-aos-delay="200">
                         I craft visually stunning graphics and user-friendly websites that bring ideas to life.
                         With a strong eye for detail and a passion for design, I help brands stand out in the digital
                         world.
                     </p>
-                    <div class="d-flex flex-column flex-md-row gap-3">
-                        <a href="#contact" class="btn btn-primary px-4">Hire Me</a>
-                        <a href="#" class="btn btn-primary px-4">Download Portfolio</a>
+                    <div class="d-flex flex-column flex-md-row gap-3 hero-buttons" data-aos="fade-up" data-aos-delay="300">
+                        <a href="#contact" class="btn btn-primary px-4 py-3 btn-hover-glow">Hire Me</a>
+                        <a href="#" class="btn btn-primary px-4 py-3 btn-hover-glow">Download Portfolio</a>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <img src="https://images.unsplash.com/photo-1620674156044-52b714665d46?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGdyYXBoaWMlMjBkZXNpZ25lcnxlbnwwfHwwfHx8MA%3D%3D"
-                        alt="Profile" class="img-fluid hero-img d-none d-lg-block">
+                <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="hero-img-container">
+                        <img src="https://images.unsplash.com/photo-1620674156044-52b714665d46?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGdyYXBoaWMlMjBkZXNpZ25lcnxlbnwwfHwwfHx8MA%3D%3D"
+                            alt="Profile" class="img-fluid hero-img">
+                        <div class="hero-img-decoration"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -75,81 +80,86 @@
     <!-- Skills Section -->
     <section id="skills" class="section">
         <div class="container">
-            <h2 class="text-center section-title">My Skills</h2>
+            <h2 class="text-center section-title" data-aos="fade-up">My Skills</h2>
             <div class="row g-4">
-                <div class="col-md-4">
+                <!-- HTML Skill -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="skill-card">
-                        <div class="skill-icon">
+                        <div class="skill-icon" data-aos="zoom-in" data-aos-delay="200">
                             <i class="fab fa-html5"></i>
                         </div>
                         <h3>HTML</h3>
-                        <p>Strong foundation in semantic HTML5 for structuring well-organized and accessible web pages.
-                        </p>
+                        <p>Strong foundation in semantic HTML5 for structuring well-organized and accessible web pages.</p>
                         <div class="progress mt-3">
                             <div class="progress-bar bg-primary" role="progressbar" style="width: 95%"></div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+
+                <!-- CSS Skill -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
                     <div class="skill-card">
-                        <div class="skill-icon">
+                        <div class="skill-icon" data-aos="zoom-in" data-aos-delay="250">
                             <i class="fab fa-css3-alt"></i>
                         </div>
                         <h3>CSS</h3>
-                        <p>Skilled in CSS3, responsive layouts, Flexbox, Grid, and custom styling to enhance visual
-                            appeal.</p>
+                        <p>Skilled in CSS3, responsive layouts, Flexbox, Grid, and custom styling to enhance visual appeal.</p>
                         <div class="progress mt-3">
                             <div class="progress-bar bg-primary" role="progressbar" style="width: 90%"></div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+
+                <!-- Bootstrap -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="skill-card">
                         <div class="skill-icon">
                             <i class="fab fa-bootstrap"></i>
                         </div>
                         <h3>Bootstrap</h3>
-                        <p>Efficient in creating responsive and mobile-first web pages using Bootstrap 4/5 utility
-                            classes and components.</p>
+                        <p>Efficient in creating responsive and mobile-first web pages using Bootstrap 4/5 utility classes.</p>
                         <div class="progress mt-3">
                             <div class="progress-bar bg-primary" role="progressbar" style="width: 92%"></div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+
+                <!-- Adobe Photoshop -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="250">
                     <div class="skill-card">
                         <div class="skill-icon">
                             <i class="fas fa-image"></i>
                         </div>
                         <h3>Adobe Photoshop</h3>
-                        <p>Experienced in designing creative posters, image editing, and digital artwork using Adobe
-                            Photoshop.</p>
+                        <p>Experienced in designing creative posters, image editing, and digital artwork using Photoshop.</p>
                         <div class="progress mt-3">
                             <div class="progress-bar bg-primary" role="progressbar" style="width: 88%"></div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+
+                <!-- Adobe Illustrator -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
                     <div class="skill-card">
                         <div class="skill-icon">
                             <i class="fas fa-vector-square"></i>
                         </div>
                         <h3>Adobe Illustrator</h3>
-                        <p>Proficient in vector-based logo design, icons, and illustration work with Adobe Illustrator.
-                        </p>
+                        <p>Proficient in vector-based logo design, icons, and illustration work with Illustrator.</p>
                         <div class="progress mt-3">
                             <div class="progress-bar bg-primary" role="progressbar" style="width: 85%"></div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+
+                <!-- Canva -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="350">
                     <div class="skill-card">
                         <div class="skill-icon">
-                            <i class="fab fa-canadian-maple-leaf"></i> <!-- A creative alternative icon for Canva -->
+                            <i class="fab fa-canadian-maple-leaf"></i>
                         </div>
                         <h3>Canva</h3>
-                        <p>Creative expertise in designing professional social media graphics, presentations, and
-                            marketing materials using Canva.</p>
+                        <p>Creative expertise in designing social media graphics, presentations, and marketing assets.</p>
                         <div class="progress mt-3">
                             <div class="progress-bar bg-primary" role="progressbar" style="width: 93%"></div>
                         </div>
@@ -159,39 +169,38 @@
         </div>
     </section>
 
-
-
     <!-- Services Section -->
     <section id="services" class="section">
         <div class="container">
-            <h2 class="text-center section-title">My Services</h2>
+            <h2 class="text-center section-title" data-aos="fade-up">My Services</h2>
             <div class="row g-4">
-                <div class="col-md-4">
+                <!-- Web Design -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="card service-card h-100">
                         <div class="card-body p-4">
                             <div class="service-icon mb-3">
                                 <i class="fas fa-desktop"></i>
                             </div>
                             <h3 class="card-title">Web Design</h3>
-                            <p class="card-text">Designing clean and user-friendly websites with modern UI, responsive
-                                layout, and performance optimization.</p>
+                            <p class="card-text">Designing clean, responsive websites with modern UI and performance optimization.</p>
                             <ul class="list-unstyled">
                                 <li><i class="fas fa-check text-primary me-2"></i> Responsive Layout</li>
-                                <li><i class="fas fa-check text-primary me-2"></i> Figma Prototyping</li>
+                                <li><i class="fas fa-check text-primary me-2"></i> Bootstrap Integration</li>
                                 <li><i class="fas fa-check text-primary me-2"></i> SEO Basics Included</li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+
+                <!-- Logo Design -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
                     <div class="card service-card h-100">
                         <div class="card-body p-4">
                             <div class="service-icon mb-3">
                                 <i class="fas fa-lightbulb"></i>
                             </div>
                             <h3 class="card-title">Logo Design</h3>
-                            <p class="card-text">Delivering timeless and professional logos that reflect brand identity
-                                and create a lasting impression.</p>
+                            <p class="card-text">Professional logos that reflect brand identity and leave a strong impression.</p>
                             <ul class="list-unstyled">
                                 <li><i class="fas fa-check text-primary me-2"></i> Custom Logo Concepts</li>
                                 <li><i class="fas fa-check text-primary me-2"></i> Scalable Vector Output</li>
@@ -200,15 +209,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+
+                <!-- Graphic Design -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="card service-card h-100">
                         <div class="card-body p-4">
                             <div class="service-icon mb-3">
                                 <i class="fas fa-images"></i>
                             </div>
                             <h3 class="card-title">Graphic Design</h3>
-                            <p class="card-text">Creating eye-catching promotional designs, social media content,
-                                flyers, and visual assets for online branding.</p>
+                            <p class="card-text">Creating visual content like social media posts, flyers, and promo graphics.</p>
                             <ul class="list-unstyled">
                                 <li><i class="fas fa-check text-primary me-2"></i> Print & Digital Designs</li>
                                 <li><i class="fas fa-check text-primary me-2"></i> Canva & Photoshop Expert</li>
@@ -221,31 +231,38 @@
         </div>
     </section>
 
-
     <!-- Education Section -->
     <section id="education" class="section">
         <div class="container">
-            <h2 class="text-center section-title">Education & Experience</h2>
+            <h2 class="text-center section-title" data-aos="fade-up">Education & Experience</h2>
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="timeline">
-                        <div class="timeline-item">
-                            <h4>Graphic Designer</h4>
-                            <h5></h5>
-                            <div class="timeline-date">Apr 2025 - Present</div>
-                            <p>Currently working as a Graphic Designer, creating visually appealing designs for digital platforms and enhancing brand identity through creative concepts.</p>
+                        <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
+                            <div class="timeline-item-content">
+                                <h4>Graphic Designer</h4>
+                                <h5>Current Position</h5>
+                                <div class="timeline-date">Apr 2025 - Present</div>
+                                <p>Currently working as a Graphic Designer, creating visually appealing designs for digital platforms and enhancing brand identity through creative concepts.</p>
+                            </div>
                         </div>
-                        <div class="timeline-item">
-                            <h4>B.Tech Information Technology</h4>
-                            <h5>Indra Ganesan College of Engineering, Trichy</h5>
-                            <div class="timeline-date">2020 - 2024</div>
-                            <p>Completed my Bachelor's degree in Information Technology, where I gained strong knowledge in programming, web development, and designing.</p>
+                        
+                        <div class="timeline-item" data-aos="fade-right" data-aos-delay="200">
+                            <div class="timeline-item-content">
+                                <h4>B.Tech Information Technology</h4>
+                                <h5>Indra Ganesan College of Engineering, Trichy</h5>
+                                <div class="timeline-date">2020 - 2024</div>
+                                <p>Completed my Bachelor's degree in Information Technology, where I gained strong knowledge in programming, web development, and designing.</p>
+                            </div>
                         </div>
-                        <div class="timeline-item">
-                            <h4>HSC & SSLC</h4>
-                            <h5>St.Thomas Higher Secondary School, Trichy</h5>
-                            <div class="timeline-date">HSC (2019-2020), SSLC (2017 - 2018)</div>
-                            <p>Completed Higher Secondary and Secondary School education with a focus on building a strong academic foundation.</p>
+                        
+                        <div class="timeline-item" data-aos="fade-right" data-aos-delay="300">
+                            <div class="timeline-item-content">
+                                <h4>HSC & SSLC</h4>
+                                <h5>St.Thomas Higher Secondary School, Trichy</h5>
+                                <div class="timeline-date">HSC (2019-2020), SSLC (2017 - 2018)</div>
+                                <p>Completed Higher Secondary and Secondary School education with a focus on building a strong academic foundation.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -253,43 +270,82 @@
         </div>
     </section>
 
-    <!-- Design Work Gallery -->
-    <section id="blog" class="section">
-        <div class="container">
-            <h2 class="text-center section-title">My Creative Work</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card blog-card h-100">
-                        <img src="images/logo1.jpg" class="card-img-top blog-img" alt="Logo Design 1">
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card blog-card h-100">
-                        <img src="images/poster1.jpg" class="card-img-top blog-img" alt="Poster Design 1">
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card blog-card h-100">
-                        <img src="images/socialmedia1.jpg" class="card-img-top blog-img" alt="Social Media Creative 1">
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card blog-card h-100">
-                        <img src="images/logo2.jpg" class="card-img-top blog-img" alt="Logo Design 2">
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card blog-card h-100">
-                        <img src="images/poster2.jpg" class="card-img-top blog-img" alt="Poster Design 2">
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card blog-card h-100">
-                        <img src="images/socialmedia2.jpg" class="card-img-top blog-img" alt="Social Media Creative 2">
-                    </div>
-                </div>
+    <!-- Design Work Gallery with Masonry and AOS -->
+    <section id="blog" class="section py-5">
+    <div class="container">
+        <h2 class="text-center section-title mb-5" data-aos="fade-up">My Creative Work</h2>
+
+        <!-- Masonry Container -->
+        <div class="row g-4" data-masonry='{"percentPosition": true }'>
+
+        <!-- Card 1 -->
+        <div class="col-md-4" data-aos="zoom-in">
+            <div class="card portfolio-card h-100 position-relative">
+            <img src="https://blog.icons8.com/wp-content/uploads/old-uploads/2019/04/poster-history-and-design-16-750x1024.jpg" class="card-img-top portfolio-img" alt="Logo Design 1">
+            <div class="portfolio-overlay text-white text-center">
+                <h5>Logo Design</h5>
+                <p>Modern and minimal logo design work.</p>
+            </div>
             </div>
         </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="card portfolio-card h-100 position-relative">
+            <img src="https://blog.icons8.com/wp-content/uploads/old-uploads/2019/04/poster-history-and-design-16-750x1024.jpg" class="card-img-top portfolio-img" alt="Poster Design 1">
+            <div class="portfolio-overlay text-white text-center">
+                <h5>Poster Design</h5>
+                <p>Eye-catching poster for social campaigns.</p>
+            </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="card portfolio-card h-100 position-relative">
+            <img src="https://blog.icons8.com/wp-content/uploads/old-uploads/2019/04/poster-history-and-design-16-750x1024.jpg" class="card-img-top portfolio-img" alt="Social Media Creative 1">
+            <div class="portfolio-overlay text-white text-center">
+                <h5>Social Media</h5>
+                <p>Instagram post design for a client.</p>
+            </div>
+            </div>
+        </div>
+
+    <!-- Card 4 -->
+        <div class="col-md-4" data-aos="zoom-in"  data-aos-delay="300">
+            <div class="card portfolio-card h-100 position-relative">
+            <img src="https://blog.icons8.com/wp-content/uploads/old-uploads/2019/04/poster-history-and-design-16-750x1024.jpg" class="card-img-top portfolio-img" alt="Logo Design 1">
+            <div class="portfolio-overlay text-white text-center">
+                <h5>Logo Design</h5>
+                <p>Modern and minimal logo design work.</p>
+            </div>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="col-md-4" data-aos="zoom-in"  data-aos-delay="400">
+            <div class="card portfolio-card h-100 position-relative">
+            <img src="https://blog.icons8.com/wp-content/uploads/old-uploads/2019/04/poster-history-and-design-16-750x1024.jpg" class="card-img-top portfolio-img" alt="Poster Design 1">
+            <div class="portfolio-overlay text-white text-center">
+                <h5>Poster Design</h5>
+                <p>Eye-catching poster for social campaigns.</p>
+            </div>
+            </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="col-md-4" data-aos="zoom-in"  data-aos-delay="500">
+            <div class="card portfolio-card h-100 position-relative">
+            <img src="https://blog.icons8.com/wp-content/uploads/old-uploads/2019/04/poster-history-and-design-16-750x1024.jpg" class="card-img-top portfolio-img" alt="Social Media Creative 1">
+            <div class="portfolio-overlay text-white text-center">
+                <h5>Social Media</h5>
+                <p>Instagram post design for a client.</p>
+            </div>
+            </div>
+        </div>
+
+        </div>
+    </div>
     </section>
 
     <!-- Contact Section -->
@@ -326,7 +382,6 @@
                             <div class="social-icons mt-3">
                                 <a href="#"><i class="fab fa-github"></i></a>
                                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
                                 <a href="#"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
@@ -353,13 +408,12 @@
         </div>
     </section>
 
-
     <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start">
-                    <p>&copy; 2025 Anbazhagan. All rights reserved.</p>
+                    <p>&copy; 2025. All rights reserved.</p>
                 </div>
             </div>
         </div>
@@ -415,11 +469,62 @@
             });
         });
     </script>
-    <!-- AOS JS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- JavaScript for AOS and effects -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-    AOS.init();
+        document.addEventListener('DOMContentLoaded', function () {
+            // Initialize AOS only once
+            AOS.init({
+                duration: 800,
+                easing: 'ease-in-out-quad',
+                once: false,
+                mirror: true,
+                offset: 120
+            });
+
+            // Add sparkle effect on hover
+            document.querySelectorAll('.timeline-item').forEach(item => {
+                item.addEventListener('mouseenter', function (e) {
+                    const sparkle = document.createElement('span');
+                    sparkle.className = 'sparkle';
+
+                    const rect = this.getBoundingClientRect();
+                    const x = e.clientX - rect.left;
+                    const y = e.clientY - rect.top;
+
+                    sparkle.style.left = `${x}px`;
+                    sparkle.style.top = `${y}px`;
+
+                    this.appendChild(sparkle);
+
+                    setTimeout(() => {
+                        sparkle.remove();
+                    }, 800);
+                });
+            });
+
+            // Custom progress bar animation (after DOM is ready)
+            document.querySelectorAll('[data-aos="progress"]').forEach(bar => {
+                bar.style.width = bar.getAttribute('data-width') || bar.style.width;
+            });
+
+            // Optional: scroll effect for hero title
+            const heroTitle = document.querySelector('.hero-title');
+            if (heroTitle) {
+                window.addEventListener('scroll', function () {
+                    const scrollPosition = window.scrollY;
+                    heroTitle.style.backgroundPosition = `${scrollPosition * 0.5}px 50%`;
+                });
+            }
+
+            // Refresh AOS on load (for dynamic content like particles)
+            window.addEventListener('load', function () {
+                AOS.refresh();
+            });
+        });
     </script>
+
 
     
 </body>
